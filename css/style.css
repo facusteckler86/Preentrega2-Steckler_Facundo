@@ -53,9 +53,36 @@ row-gap: 20px;}
 
 /* medida tablet. */
 @media (min-with: 768px){
-
+}
+.image_main:{
+    box-sizing: 30%;
 }
 /* medida mobile */
+.footer{
+    text-align: justify;
+    text-size-adjust: 50%;
+    background-color: bisque;
+    display: grid;
+    
+    
+}
+
+
+.main{
+    background-color: lightsalmon;
+}
+
+
+.header{
+
+    text-align: justify;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 
 @media (min-with:320px){
 
