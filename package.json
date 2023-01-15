@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_web",
+  "version": "1.0.0",
+  "description": "Hola este es el README de mi primer intento de pagina web que realizo gracias a CoderHouse. En este caso hago una web como portfolio de un estudio de arquitectura.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facusteckler86/Preentrega2-Steckler-_Facundo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facusteckler86/Preentrega2-Steckler-_Facundo/issues"
+  },
+  "homepage": "https://github.com/facusteckler86/Preentrega2-Steckler-_Facundo#readme"
+}
