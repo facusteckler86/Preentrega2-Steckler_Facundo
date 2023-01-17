@@ -4,7 +4,9 @@
   "description": "Hola este es el README de mi primer intento de pagina web que realizo gracias a CoderHouse. En este caso hago una web como portfolio de un estudio de arquitectura.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/style.scss css/style.css",
+     "watch-css":"nodemon -e scss -x \"npm run buil-css\""
   },
   "repository": {
     "type": "git",
