@@ -4,5 +4,8 @@ Uso tecnologias :
 
 - HTML
 - CSS
+- SASS
+- BOOTSTRAP
+- JS
 
 ![](https://img.freepik.com/fotos-premium/diseno-interiores-cocina-estilo-moderno-pared-azul-oscuro-representacion-3d_41470-4082.jpg?w=826)
