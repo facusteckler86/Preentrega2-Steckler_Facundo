@@ -1,6 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-@import
+@import "./utilities/variable.scss";
+@import "./base/reset.scss";
+@import "./base/type.scss";
+@import "./layout/header.scss";
