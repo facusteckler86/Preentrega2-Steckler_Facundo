@@ -8,6 +8,22 @@
     image-orientation: 100%;
     background-repeat: no-repeat;
     flex-direction: column;
+    margin: auto;
+    width:700px;
+    padding: 20px;
+    
+
+}
+.imagen_pasillo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    width: inherit;
+    height: inherit;
+    transition: 1s;
+    object-fit: contain;
+
     
 
 }
