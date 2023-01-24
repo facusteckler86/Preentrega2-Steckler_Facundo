@@ -3,7 +3,7 @@
     justify-content: $justify;
     align-items: $align;
     grid-template-columns: $col;
-}
+    }
 
 @mixin flex ($justify, $align, $dir) {
     display: flex;

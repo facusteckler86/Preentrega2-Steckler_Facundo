@@ -1,0 +1,20 @@
+@media (max-widht: 320px){
+    .header{
+        @include flex (center, flex-end, row);
+        background-color: #E8F3D6;
+    }
+    
+    .main{
+        @include grid (center, stretch, min-content);
+        background-color:#FFDCA9 ;
+    }
+    .image_main{
+        position: sticky;
+    
+    }
+    .footer{
+     
+        @include grid (center, stretch, min-content);
+        background-color: #FAAB78;
+    }
+}
