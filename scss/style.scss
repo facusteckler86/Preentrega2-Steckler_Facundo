@@ -3,3 +3,9 @@
 @import "./utilities/mixin.scss";
 @import "./base/type.scss";
 @import "./layout/header.scss";
+@import "./layout/main";
+@import "./layout/footer";
+
+@import "./layout/media-tablet";
+@import "./layout/media-mobile";
+

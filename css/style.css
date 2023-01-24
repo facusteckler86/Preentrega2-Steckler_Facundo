@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+.header {
+  background-color: #E8F3D6;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .header .container-fluid a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px; }
+  .header .container-fluid:hover {
+    color: burlywood;
+    font-size: 15px; }
 
-/*# sourceMappingURL=style.css.map */
+.main {
+  background-color: #FFDCA9;
+  image-orientation: 100%;
+  image-rendering: auto; }
+
+.image_main {
+  image-orientation: 100%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  margin: auto;
+  width: 700px;
+  padding: 20px; }
+
+.imagen_pasillo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  width: inherit;
+  height: inherit;
+  transition: 1s;
+  object-fit: contain; }
+
+.footer {
+  background-color: #FFDCA9;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  flex-direction: center; }
