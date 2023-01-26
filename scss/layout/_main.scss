@@ -1,13 +1,12 @@
 .main{
     background-color: #FFDCA9;
-    image-orientation: 100%;
-    image-rendering: auto;
+    @include grid (center, flex-end, row)
 }
 
 .image_main{
     image-orientation: 100%;
     background-repeat: no-repeat;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
     width:700px;
     padding: 20px;

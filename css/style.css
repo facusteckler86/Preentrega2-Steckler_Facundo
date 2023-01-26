@@ -10,23 +10,26 @@
   justify-content: end;
   align-items: center;
   flex-direction: row-reverse; }
-  .header .container-fluid a {
-    text-decoration: none;
+  .header .navbar li {
+    list-style: none; }
+  .header .navbar li a {
     color: black;
     font-size: 25px; }
-  .header .container-fluid:hover {
+  .header:hover {
     color: burlywood;
     font-size: 15px; }
 
 .main {
   background-color: #FFDCA9;
-  image-orientation: 100%;
-  image-rendering: auto; }
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  grid-template-columns: row; }
 
 .image_main {
   image-orientation: 100%;
   background-repeat: no-repeat;
-  flex-direction: column;
+  flex-direction: row;
   margin: auto;
   width: 700px;
   padding: 20px; }
