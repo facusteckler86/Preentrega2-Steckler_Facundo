@@ -1,15 +1,22 @@
+
 .main{
     background-color: #FFDCA9;
-    @include grid (center, flex-end, row)
+}
+.main{
+       @include flex (flex-end, stretch, row-reverse)
 }
 
 .image_main{
-    image-orientation: 100%;
+    background-color: #FFDCA9;
     background-repeat: no-repeat;
-    flex-direction: row;
-    margin: auto;
-    width:700px;
-    padding: 20px;
+    background-size: cover;
+    flex-direction: center;
+    background-position: center;
+    image-rendering: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+   
     
 
 }
@@ -22,7 +29,7 @@
     height: inherit;
     transition: 1s;
     object-fit: contain;
-
-    
+}
+.caras{
 
 }

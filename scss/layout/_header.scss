@@ -1,19 +1,28 @@
 .header{
     background-color: #E8F3D6;
-    @include flex (end,center, row-reverse);
+    @include flex (flex-end, stretch, row-reverse);
     
         .navbar li {
             list-style: none;
+            flex-direction: row-reverse;
+            justify-items: flex-end;
+            list-style-position: inside;
+            background-color: #E8F3D6;
         
         }
         .navbar li a {
             color: black;
             font-size: 25px;
+            list-style: none;
+            justify-items: flex-end;
+            flex-direction: row-reverse;
 
         }
         &:hover{
             
             color: burlywood;
-            font-size: 15px;}
+            font-size: 15px;
+            list-style: none;
+        }
     
     }

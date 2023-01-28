@@ -1,4 +1,12 @@
 .footer{
-    background-color: #FFDCA9;
+    background-color: #d4c8b6;
     @include flex (row, center, center);
+    
+
+    flex-direction: flex-end;
+    align-items: flex-end;
+    justify-items: space-around;
+    margin-block-end: auto;
+    padding: 30px;
+    
   }

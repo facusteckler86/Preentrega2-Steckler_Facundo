@@ -7,32 +7,45 @@
 .header {
   background-color: #E8F3D6;
   display: flex;
-  justify-content: end;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: stretch;
   flex-direction: row-reverse; }
   .header .navbar li {
-    list-style: none; }
+    list-style: none;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    list-style-position: inside;
+    background-color: #E8F3D6; }
   .header .navbar li a {
     color: black;
-    font-size: 25px; }
+    font-size: 25px;
+    list-style: none;
+    justify-items: flex-end;
+    flex-direction: row-reverse; }
   .header:hover {
     color: burlywood;
-    font-size: 15px; }
+    font-size: 15px;
+    list-style: none; }
 
 .main {
-  background-color: #FFDCA9;
-  display: grid;
-  justify-content: center;
-  align-items: flex-end;
-  grid-template-columns: row; }
+  background-color: #FFDCA9; }
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-direction: row-reverse; }
 
 .image_main {
-  image-orientation: 100%;
+  background-color: #FFDCA9;
   background-repeat: no-repeat;
-  flex-direction: row;
-  margin: auto;
-  width: 700px;
-  padding: 20px; }
+  background-size: cover;
+  flex-direction: center;
+  background-position: center;
+  image-rendering: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px; }
 
 .imagen_pasillo {
   position: absolute;
@@ -45,11 +58,16 @@
   object-fit: contain; }
 
 .footer {
-  background-color: #FFDCA9;
+  background-color: #d4c8b6;
   display: flex;
   justify-content: row;
   align-items: center;
-  flex-direction: center; }
+  flex-direction: center;
+  flex-direction: flex-end;
+  align-items: flex-end;
+  justify-items: space-around;
+  margin-block-end: auto;
+  padding: 30px; }
 
 @media (max-width: 768px) {
   .header {
