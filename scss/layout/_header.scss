@@ -1,28 +1,35 @@
 .header{
-    background-color: #E8F3D6;
-    @include flex (flex-end, stretch, row-reverse);
-    
-        .navbar li {
-            list-style: none;
-            flex-direction: row-reverse;
-            justify-items: flex-end;
-            list-style-position: inside;
-            background-color: #E8F3D6;
-        
-        }
-        .navbar li a {
-            color: black;
-            font-size: 25px;
-            list-style: none;
-            justify-items: flex-end;
-            flex-direction: row-reverse;
+        background-color: #4de6eb;
+    }
+    .header{
+        justify-content: space-between;
+        display: flex;
+        background-color: #4de6eb;
 
+        .nav{
+            width: 50px;
         }
-        &:hover{
-            
-            color: burlywood;
-            font-size: 15px;
-            list-style: none;
-        }
-    
+        
+        .navBar{
+       
+        display: flex;
+        gap: 20px;
+        height: 50px;
+        align-items: center;
+        padding-top: 20px;
+        background-color: #4de6eb;
+        justify-content: space-evenly;
+        margin-right: 20px;
+
+    }
+    .li a {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    &:hover{
+        font-size: 20px;
+        color: rgb(30, 255, 0);
+    }
     }

@@ -6,6 +6,9 @@
        @include flex (flex-end, stretch, row-reverse)
 }
 
+.container{
+    background-color: #FFDCA9;
+}
 .image_main{
     background-color: #FFDCA9;
     background-repeat: no-repeat;
@@ -16,20 +19,17 @@
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-   
-    
+     
+
+}
+
+.foto_patio{
+    flex-direction: column-reverse;
+    background-size: 25%;
+    image-orientation: flip;
 
 }
 .imagen_pasillo{
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    width: inherit;
-    height: inherit;
-    transition: 1s;
-    object-fit: contain;
-}
-.caras{
-
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
 }
