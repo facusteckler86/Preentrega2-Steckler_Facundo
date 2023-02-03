@@ -1,6 +1,7 @@
 
 .main{
     background-color: #FFDCA9;
+    padding-top: 20rem;
 }
 .main{
        @include flex (flex-end, stretch, row-reverse)
@@ -8,6 +9,8 @@
 
 .container{
     background-color: #FFDCA9;
+    width: 100%;
+    max-width: 100%;
 }
 .image_main{
     background-color: #FFDCA9;
@@ -22,14 +25,18 @@
      
 
 }
+.texto_patio{
 
-.foto_patio{
-    flex-direction: column-reverse;
-    background-size: 25%;
-    image-orientation: flip;
-
+  font-family: roboto;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  .p{
+    margin-bottom: 1.6em;
+  }
 }
-.imagen_pasillo{
-    flex-direction: column-reverse;
-    background-repeat: no-repeat;
+.imagen_patio{
+
+  
+
 }

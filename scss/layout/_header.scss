@@ -1,35 +1,58 @@
 .header{
-        background-color: #4de6eb;
-    }
-    .header{
-        justify-content: space-between;
-        display: flex;
-        background-color: #4de6eb;
+    background-color: #E8F3D6;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 3rem 0.5rem;
 
-        .nav{
-            width: 50px;
-        }
-        
-        .navBar{
-       
-        display: flex;
-        gap: 20px;
-        height: 50px;
-        align-items: center;
-        padding-top: 20px;
-        background-color: #4de6eb;
-        justify-content: space-evenly;
-        margin-right: 20px;
+     position: fixed;
+    left: 0;
+     top: 0;
+     width: 100%;
+}
 
-    }
-    .li a {
+.h1{
+
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.menu{
+    display: none;
+}
+
+.header a{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.navBar{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+     }
+
+     .navigation{
         list-style: none;
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+            }
+
+    
+    .navigation li a {
+
+        display: block;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        transition: all 0.4 linear;
+        border-radius: 0,5px;
+        &:hover{
+            background-color: rgb(127, 161, 255);
+        }
     }
-    &:hover{
-        font-size: 20px;
-        color: rgb(30, 255, 0);
-    }
-    }
+   
