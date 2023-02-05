@@ -1,65 +1,36 @@
 @media (max-width:768px){
     
-    .header{
-       
-    .navBar{
-        text-decoration: none;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-         }
+.header{
+    background-color: #E8F3D6;
+    display: grid;
+    width: 100%;
+    height: 10%;
     
-         .navigation{
-            list-style: none;
-            width: 100%;
-            display: block;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-                }
-                
-                .menu{
-                    display: block;
-                    cursor: pointer;
-                }
-                
-                .navigation li{
-                    display: none;
-                }
-                
-                .navigation li.show{
-
-                    display: block;
-                }
-
-
-        .navigation li a {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "navigation navigation navigation navigation"
+    "a a a a";
     
-            display: block;
-            margin: 0;
-            padding: 0.5rem 0;
-            transition: all 0.4 linear;
-            border-radius: 0,5px;
-            &:hover{
-                background-color: rgb(127, 161, 255);
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
+    .grid h1{
+        grid-area: h1;
+        justify-self: center;
+    }
+    
+    .grid navigation{
+        grid-area: navigation;
+        justify-self: center;
+    }
 }
-
-
-
-
-
+.grid a{
+    grid-area: a;
+    justify-self: center;
+}
+.header a{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    
+}
 }
