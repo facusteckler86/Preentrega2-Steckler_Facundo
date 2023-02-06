@@ -25,16 +25,55 @@
      
 
 }
-.texto_patio{
 
+.imagen_patio{
+
+  background-color: #FFDCA9;
+  
+  
+  margin: 5px;
+}
+.texto_patio{
+  display: flex;
   font-family: roboto;
   color: #333;
-  font-size: 1.2rem;
-  line-height: 1.2em;
-  .p{
-    margin-bottom: 1.6em;
+  justify-content: right;
+  background-color: #FFDCA9;
+
+  
   }
-}
+  .texto-patio{
+    display: flex;
+    font-family: Roboto;
+    color: #333;
+    justify-content: left;
+    
+    background-color: #FFDCA9;
+
+    flex: 1;
+    &:first-child{
+      flex: 2;
+    }
+    
+    
+  }
+  
+  .satisfechos{
+    background-color: aquamarine;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .clientes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFDCA9;
+  }
+
+ 
+
 
 .caras{
   display: flex;
@@ -74,11 +113,18 @@
   margin-top: 10px;
 }
 
+
+.fotos_reel{
+
+  background-color: #FFDCA9;
+  justify-content: center;
+  display: block;
+}
+
 .reel{
     display: flex;
     justify-content: baseline;
     margin: 10%;
-    
     width: 500px;
     height: 300px;
     background-color: #FFDCA9;
