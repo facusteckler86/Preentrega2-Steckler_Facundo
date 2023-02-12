@@ -198,20 +198,29 @@ footer h2 {
   .header {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex-direction: row;
-    background-color: #E8F3D6; }
+    align-content: center;
+    flex-direction: column;
+    background-color: #E8F3D6;
+    margin: 100%; }
   .main {
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-items: stretch;
-    grid-template-columns: min-content;
+    align-content: baseline;
+    flex-direction: column;
     background-color: #FFDCA9; }
   .image_main {
-    position: sticky; }
+    background-image: url(../../asset/img/imagen_index.jpg);
+    background-size: cover; }
+  .fotos_reel {
+    background-image: url(../../asset/img/page_03_04.jpg);
+    background-image: url(../../asset/img/page_03_03.jpg);
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-position: center; }
   .footer {
-    display: grid;
-    justify-content: center;
-    align-items: stretch;
-    grid-template-columns: min-content;
-    background-color: #FAAB78; } }
+    display: flexbox;
+    justify-content: baseline;
+    align-content: center;
+    background-color: #FAAB78;
+    width: 100%; } }
