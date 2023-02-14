@@ -78,6 +78,9 @@
 .imagen_patio {
   background-color: #FFDCA9;
   background-size: contain;
+  background-image: initial;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 5px; }
 
 .texto_patio {
@@ -202,7 +205,13 @@ footer h2 {
     align-content: center;
     flex-direction: column;
     background-color: #E8F3D6;
-    margin: 100%; }
+    margin: 100%;
+    padding: 100px; }
+    .header .h1 {
+      display: flex;
+      align-content: first baseline;
+      justify-content: flex-start;
+      font-size: 20px; }
   .main {
     display: flex;
     justify-content: center;
@@ -210,15 +219,18 @@ footer h2 {
     flex-direction: column;
     background-color: #FFDCA9; }
   .image_main {
-    background-image: url(../../asset/img/imagen_index.jpg);
-    background-size: cover; }
+    background-image: url(../../asset/img/index_mobile.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
   .fotos_reel {
     background-image: url(../../asset/img/page_03_04.jpg);
     background-image: url(../../asset/img/page_03_03.jpg);
     display: flex;
     flex-direction: column;
     background-size: contain;
-    background-position: center; }
+    background-position: center;
+    background-repeat: no-repeat; }
   .footer {
     display: flexbox;
     justify-content: baseline;

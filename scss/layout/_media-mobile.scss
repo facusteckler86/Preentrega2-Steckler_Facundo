@@ -6,7 +6,14 @@
         flex-direction: column;
         background-color: #E8F3D6;
         margin: 100%;
+        padding: 100px;
         
+        .h1{
+            display: flex;
+            align-content: first baseline;
+            justify-content: flex-start;
+            font-size: 20px;
+        }
     }
     
     .main{
@@ -17,8 +24,11 @@
         background-color:#FFDCA9 ;
     }
     .image_main{
-        background-image: url(../../asset/img/imagen_index.jpg);
-        background-size: cover;    
+        background-image: url(../../asset/img/index_mobile.jpg);
+        background-size: contain;  
+        background-position: center;
+        background-repeat: no-repeat;
+
     }
 
     
@@ -29,6 +39,7 @@
         flex-direction: column;
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .footer{
