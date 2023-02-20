@@ -75,99 +75,65 @@
   margin-right: auto;
   padding: 25px; }
 
-.imagen_patio {
+.contenedor-grid {
   background-color: #FFDCA9;
-  background-size: contain;
-  background-image: initial;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 5px; }
-
-.texto_patio {
   display: flex;
-  font-family: roboto;
-  color: #333;
-  justify-content: right;
-  background-color: #FFDCA9; }
-
-.texto-patio {
-  display: flex;
-  font-family: Roboto;
-  color: #333;
-  justify-content: left;
-  background-color: #FFDCA9;
-  flex: 1; }
-  .texto-patio:first-child {
-    flex: 2; }
-
-.satisfechos {
-  background-color: aquamarine;
-  justify-content: center;
-  display: flex;
-  align-items: center; }
-
-.clientes {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: #FFDCA9; }
-
-.caras {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding: 170px;
-  border-radius: 50%;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif; }
-  .caras .caras img {
-    border-radius: 50%; }
-  .caras .pie_de_foto {
-    text-align: end;
-    margin: 10px;
-    padding: 15px; }
-
-.contact {
-  font-family: "Montserrat", sans-serif;
-  background-color: #FFDCA9;
-  font-size: 20px;
-  margin-top: 10px;
-  align-content: flex-start;
-  gap: 10px;
-  position: left; }
-
-.formulario {
-  background-color: #FFDCA9;
-  margin-top: 10px; }
-
-.fotos_reel {
-  background-color: #FFDCA9;
-  justify-content: center;
-  display: block; }
-
-.reel {
-  display: flex;
-  justify-content: baseline;
-  margin: 10%;
-  width: 500px;
-  height: 300px;
-  background-color: #FFDCA9; }
-  .reel .reel img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: 2s;
-    background-color: #FFDCA9; }
-  .reel :hover {
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%); }
-  .reel .article {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif; }
+  .contenedor-grid .texto-patio {
     display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    text-align: center; }
+    justify-content: left;
+    align-content: stretch; }
+  .contenedor-grid .imagen_patio {
+    display: flex;
+    justify-content: right;
+    align-content: stretch; }
+  .contenedor-grid .clientes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFDCA9; }
+  .contenedor-grid .caras {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 170px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif; }
+    .contenedor-grid .caras .caras img {
+      border-radius: 50%; }
+    .contenedor-grid .caras .pie_de_foto {
+      text-align: end;
+      margin: 10px;
+      padding: 15px; }
+  .contenedor-grid .contact {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFDCA9;
+    font-size: 20px;
+    margin-top: 10px;
+    align-content: flex-start;
+    gap: 10px;
+    position: left; }
+  .contenedor-grid .formulario {
+    background-color: #FFDCA9;
+    margin-top: 10px; }
+  .contenedor-grid .reel {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(2 1fr);
+    background-color: #FFDCA9;
+    grid-area: "item 01 item 02 item 03" "item 04 item 05 item 06"; }
+  .contenedor-grid .item 01 {
+    grid-area: item 01;
+    background-color: #FFDCA9; }
+
+.item 02 {
+  grid-area: item 02;
+  bacground-color: #FFDCA9; }
 
 .footer {
   background-color: #d4c8b6;
