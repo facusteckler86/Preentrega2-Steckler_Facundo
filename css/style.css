@@ -217,7 +217,8 @@ footer h2 {
     justify-content: center;
     align-content: baseline;
     flex-direction: column;
-    background-color: #FFDCA9; }
+    background-color: #FFDCA9;
+    width: 100%; }
   .image_main {
     background-image: url(../../asset/img/index_mobile.jpg);
     background-size: contain;
@@ -231,9 +232,19 @@ footer h2 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
+  .caras {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; }
+    .caras .pie_de_foto {
+      display: grid;
+      grid-template-columns: repeat(1fr 1fr 1fr);
+      grid-template-areas: "" "" ""; }
   .footer {
-    display: flexbox;
+    display: flex;
     justify-content: baseline;
     align-content: center;
+    flex-direction: row;
     background-color: #FAAB78;
     width: 100%; } }
