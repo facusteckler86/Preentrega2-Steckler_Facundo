@@ -51,7 +51,7 @@
 
 .main {
   background-color: #FFDCA9;
-  padding-top: 20rem; }
+  padding-top: 10rem; }
 
 .main {
   display: flex;
@@ -96,44 +96,69 @@
     justify-content: center;
     align-content: center;
     background-color: #FFDCA9; }
-  .contenedor-grid .caras {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    padding: 170px;
-    border-radius: 50%;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif; }
-    .contenedor-grid .caras .caras img {
-      border-radius: 50%; }
-    .contenedor-grid .caras .pie_de_foto {
-      text-align: end;
-      margin: 10px;
-      padding: 15px; }
-  .contenedor-grid .contact {
-    font-family: "Montserrat", sans-serif;
-    background-color: #FFDCA9;
-    font-size: 20px;
-    margin-top: 10px;
-    align-content: flex-start;
-    gap: 10px;
-    position: left; }
-  .contenedor-grid .formulario {
-    background-color: #FFDCA9;
-    margin-top: 10px; }
-  .contenedor-grid .reel {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(2 1fr);
-    background-color: #FFDCA9;
-    grid-area: "item 01 item 02 item 03" "item 04 item 05 item 06"; }
-  .contenedor-grid .item 01 {
-    grid-area: item 01;
-    background-color: #FFDCA9; }
 
-.item 02 {
-  grid-area: item 02;
-  bacground-color: #FFDCA9; }
+.container_caras {
+  display: flex;
+  justify-content: end;
+  align-content: flex-end;
+  background-color: #FFDCA9;
+  width: 100%;
+  height: 700px; }
+  .container_caras .caras {
+    display: flex;
+    justify-content: flex-end;
+    align-content: right; }
+    .container_caras .caras .img {
+      width: 300px; }
+  .container_caras .pie_de_foto {
+    display: flex;
+    justify-content: flex-start;
+    align-content: left; }
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFDCA9;
+  font-size: 20px;
+  margin-top: 10px;
+  align-content: flex-start;
+  gap: 10px;
+  position: left; }
+
+.contact {
+  background-color: #FFDCA9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-end;
+  align-content: right; }
+
+.formulario {
+  background-color: #FFDCA9;
+  margin-top: 10px;
+  display: flex;
+  justify-content: left;
+  align-content: stretch; }
+
+.reel {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(3 1fr);
+  grid-area: "item1 item2" "item3 item4" "item 5 item 6";
+  width: 100%;
+  background-color: #FFDCA9; }
+  .reel .item_01 {
+    grid-area: item1; }
+  .reel .item_02 {
+    grid-area: item2; }
+  .reel .item_03 {
+    grid-area: item3; }
+  .reel .item_04 {
+    grid-area: item4; }
+  .reel .item_05 {
+    grid-area: item5; }
+  .reel .item_06 {
+    grid-area: item6; }
 
 .footer {
   background-color: #d4c8b6;
@@ -146,7 +171,7 @@
   justify-items: space-around;
   margin-block-end: auto;
   text-align: center;
-  padding: 30px; }
+  padding: 60px; }
 
 footer h2 {
   font-size: "Roboto", sans-serif;
@@ -172,12 +197,13 @@ footer h2 {
     flex-direction: column;
     background-color: #E8F3D6;
     margin: 100%;
-    padding: 100px; }
+    padding: 100px;
+    width: 100%; }
     .header .h1 {
       display: flex;
       align-content: first baseline;
       justify-content: flex-start;
-      font-size: 20px; }
+      font-size: 10px; }
   .main {
     display: flex;
     justify-content: center;
@@ -197,12 +223,14 @@ footer h2 {
     flex-direction: column;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    width: 100%; }
   .caras {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .caras .pie_de_foto {
       display: grid;
       grid-template-columns: repeat(1fr 1fr 1fr);
