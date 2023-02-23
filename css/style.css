@@ -141,23 +141,31 @@
   align-content: stretch; }
 
 .reel {
+  background-color: #FFDCA9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 50px; }
+
+.container-img {
   display: grid;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(3 1fr);
   grid-area: "item1 item2" "item3 item4" "item 5 item 6";
   width: 100%;
   background-color: #FFDCA9; }
-  .reel .item_01 {
+  .container-img .item_01 {
     grid-area: item1; }
-  .reel .item_02 {
+  .container-img .item_02 {
     grid-area: item2; }
-  .reel .item_03 {
+  .container-img .item_03 {
     grid-area: item3; }
-  .reel .item_04 {
+  .container-img .item_04 {
     grid-area: item4; }
-  .reel .item_05 {
+  .container-img .item_05 {
     grid-area: item5; }
-  .reel .item_06 {
+  .container-img .item_06 {
     grid-area: item6; }
 
 .footer {
@@ -196,14 +204,14 @@ footer h2 {
     align-content: center;
     flex-direction: column;
     background-color: #E8F3D6;
-    margin: 100%;
-    padding: 100px;
+    margin: 20px;
+    padding: 50px;
     width: 100%; }
     .header .h1 {
       display: flex;
       align-content: first baseline;
       justify-content: flex-start;
-      font-size: 10px; }
+      font-size: 5px; }
   .main {
     display: flex;
     justify-content: center;
@@ -215,7 +223,8 @@ footer h2 {
     background-image: url(../../asset/img/index_mobile.jpg);
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    width: 25%; }
   .fotos_reel {
     background-image: url(../../asset/img/page_03_04.jpg);
     background-image: url(../../asset/img/page_03_03.jpg);

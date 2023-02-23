@@ -130,6 +130,16 @@ font-family: Arial, Helvetica, sans-serif;
 // parte del main del page 04
 
 .reel{
+
+  background-color: #FFDCA9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 50px;
+}
+
+.container-img{
     
     display: grid;
     grid-template-columns: repeat(2 1fr);

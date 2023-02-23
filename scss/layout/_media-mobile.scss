@@ -5,15 +5,15 @@
         align-content: center;
         flex-direction: column;
         background-color: #E8F3D6;
-        margin: 100%;
-        padding: 100px;
+        margin: 20px;
+        padding: 50px;
         width: 100%;
         
         .h1{
             display: flex;
             align-content: first baseline;
             justify-content: flex-start;
-            font-size: 10px;
+            font-size: 5px;
         }
     }
     
@@ -30,6 +30,7 @@
         background-size: contain;  
         background-position: center;
         background-repeat: no-repeat;
+        width: 25%;
 
     }
 
