@@ -152,7 +152,9 @@
   display: grid;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(3 1fr);
-  grid-area: "item1 item2" "item3 item4" "item 5 item 6";
+  grid-area: "item1 item2"
+ "item3 item4"
+ "item 5 item 6";
   width: 100%;
   background-color: #FFDCA9; }
   .container-img .item_01 {
@@ -243,7 +245,9 @@ footer h2 {
     .caras .pie_de_foto {
       display: grid;
       grid-template-columns: repeat(1fr 1fr 1fr);
-      grid-template-areas: "" "" ""; }
+      grid-template-areas: ""
+ ""
+ ""; }
   .footer {
     display: flex;
     justify-content: baseline;
