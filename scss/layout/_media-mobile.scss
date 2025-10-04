@@ -1,76 +1,79 @@
-@media (max-widht: 320px){
-    .header{
+@media (max-width: 320px) {
+    .header {
         display: flex;
-        justify-content: center;
-        align-content: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #E8F3D6;
-        margin: 20px;
-        padding: 50px;
+        margin: 10px 0;
+        padding: 20px 10px;
         width: 100%;
-        
-        .h1{
-            display: flex;
-            align-content: first baseline;
-            justify-content: flex-start;
-            font-size: 5px;
+
+        h1 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 0;
         }
     }
-    
-    .main{
+
+    .main {
         display: flex;
-        justify-content: center;
-        align-content: baseline;
         flex-direction: column;
-        background-color:#FFDCA9 ;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFDCA9;
         width: 100%;
+        padding: 10px 0;
     }
-    .image_main{
+
+    .image_main {
         background-image: url(../../asset/img/index_mobile.jpg);
-        background-size: contain;  
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 25%;
-
-    }
-
-    
-    .fotos_reel{
-        background-image: url(../../asset/img/page_03_04.jpg);
-        background-image: url(../../asset/img/page_03_03.jpg);
-        display: flex;
-        flex-direction: column;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-    
-    .caras{
-
+        width: 90vw;
+        height: 120px;
+        margin: 0 auto 10px auto;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .fotos_reel {
+        background-image: url(../../asset/img/page_03_04.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 120px;
+        margin-bottom: 10px;
+        display: flex;
         flex-direction: column;
+    }
+
+    .caras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        
-        .pie_de_foto{
-            display: grid;
-            grid-template-columns: repeat(1fr 1fr 1fr);
-            grid-template-areas: 
-            ""
-            ""
-            "";
+
+        .pie_de_foto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            font-size: 0.8rem;
         }
     }
 
-    .footer{
-     
-        display:flex;
-        justify-content: baseline;
-        align-content: center;
-        flex-direction: row;
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: #FAAB78;
         width: 100%;
-     }
+        padding: 10px 0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
 }

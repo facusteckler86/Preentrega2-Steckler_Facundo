@@ -1,174 +1,129 @@
+$main-bg: #FFDCA9;
 
-.main{
-    background-color: #FFDCA9;
-    padding-top: 10rem;
-}
-.main{
-       @include flex (flex-end, stretch, row-reverse)
-}
-
-.container{
-    background-color: #FFDCA9;
-    width: 100%;
-    max-width: 100%;
-}
-.image_main{
-    background-color: #FFDCA9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: center;
-    background-position: center;
-    image-rendering: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
-     
-
+.main {
+  background-color: $main-bg;
+  padding-top: 10rem;
+  @include flex(flex-end, stretch, row-reverse);
 }
 
+.container {
+  background-color: $main-bg;
+  width: 100%;
+  max-width: 100%;
+}
 
-
-
-
-
-.contenedor-grid{
-background-color: #FFDCA9;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-around;
-align-items: flex-end;
-font-family: Arial, Helvetica, sans-serif;
-
-
-
-.texto-patio{
+.image_main {
+  background-color: $main-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
   display: flex;
-  justify-content: left;
-  align-content: stretch;
+  justify-content: center;
+  align-items: center;
 }
 
-.imagen_patio{
+.contenedor-grid {
+  background-color: $main-bg;
   display: flex;
-  justify-content: right;
-  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
 
-}
-  .clientes{
+  .texto-patio {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #FFDCA9;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 
-  
-  
-}
-
-// parte del main del page 05
-
-.container_caras{
-
-  display: flex;
-  justify-content: end;
-  align-content: flex-end;
-  background-color: #FFDCA9;
-  width: 100%;
-  height: 700px;
-  
-  .caras{
-
+  .imagen_patio {
     display: flex;
     justify-content: flex-end;
-    align-content: right;
-    .img{
+    align-items: stretch;
+  }
+
+  .clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-bg;
+  }
+}
+
+// Parte del main del page 05
+.container_caras {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: $main-bg;
+  width: 100%;
+  height: 700px;
+
+  .caras {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .img {
       width: 300px;
     }
   }
-  .pie_de_foto{
+  .pie_de_foto {
     display: flex;
     justify-content: flex-start;
-    align-content: left;
+    align-items: flex-start;
   }
 }
 
-
-.contact{
-
+.contact {
   font-family: $typo-principal;
-  background-color:#FFDCA9 ;
+  background-color: $main-bg;
   font-size: 20px;
   margin-top: 10px;
-  align-content: flex-start;
-  gap: 10px;
-  position: left;
-  
-}
-
-.contact{
-
-  background-color: #FFDCA9;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: flex-end;
-  align-content: right;
+  align-items: flex-end;
 }
 
-// parte del main del page 05
-
-.formulario{
-  background-color: #FFDCA9;
+.formulario {
+  background-color: $main-bg;
   margin-top: 10px;
   display: flex;
-  justify-content: left;
-  align-content: stretch;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
-
-// parte del main del page 04
-
-.reel{
-
-  background-color: #FFDCA9;
+// Parte del main del page 04
+.reel {
+  background-color: $main-bg;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 100%;
   margin: 50px;
 }
 
-.container-img{
-    
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(3 1fr);
-    grid-area: 
-    "item1 item2"
-    "item3 item4"
-    "item 5 item 6";
-    width: 100%;
-    background-color: #FFDCA9;
-        
-    .item_01{
-    grid-area: item1;
-    }
-    .item_02{
-    grid-area: item2;
-    }
-    .item_03{
-    grid-area: item3;
-    }
-    .item_04{
-    grid-area: item4;
-    }
-    .item_05{
-    grid-area: item5;
-    }
-    .item_06{
-    grid-area: item6;
-    }
-  }
+.container-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  background-color: $main-bg;
+  gap: 10px;
 
-  
+  .item_01 { grid-area: 1 / 1 / 2 / 2; }
+  .item_02 { grid-area: 1 / 2 / 2 / 3; }
+  .item_03 { grid-area: 2 / 1 / 3 / 2; }
+  .item_04 { grid-area: 2 / 2 / 3 / 3; }
+  .item_05 { grid-area: 3 / 1 / 4 / 2; }
+  .item_06 { grid-area: 3 / 2 / 4 / 3; }
+}
+

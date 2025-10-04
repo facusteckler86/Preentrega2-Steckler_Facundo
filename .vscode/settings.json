@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5500,
+    //"liveServer.settings.CustomBrowser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "liveServer.settings.NoBrowser": false
+
+
+
 }
