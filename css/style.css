@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
 /* Variables */
 :root {
   --header-offset: 6.5rem; /* Ajusta según la altura real del header */
@@ -164,21 +171,24 @@ main {
   justify-content: center;
   align-items: center;
   margin: 3rem 0;
+  position: relative;
+  padding-top: 60px;
 }
 
 /* Grid Images */
-.container-img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  margin: 2rem 0;
-}
-
 .container-img img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* suaviza la animación */
 }
+
+.container-img img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
 
 /* Footer */
 .footer {
@@ -293,4 +303,108 @@ main {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+}
+
+.container-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 20px; /* espacio entre imágenes */
+  padding: 20px;
+}
+
+.container-img img {
+  width: 100%;       /* que ocupen todo el ancho de la celda */
+  height: auto;      /* mantiene proporción */
+  border-radius: 8px; /* opcional, bordes redondeados */
+  object-fit: cover; /* recorte elegante si las imágenes no son proporcionales */
+}
+@media (max-width: 768px) {
+  .container-img {
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-img {
+    grid-template-columns: 1fr; /* 1 por fila en móviles */
+  }
+}
+
+.titulo_img {
+  position: absolute;
+  top: 0;               /* arriba del contenedor */
+  left: 50%;            /* centrado horizontal */
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.5); /* fondo semitransparente */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+.layout {
+  display: flex;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+.intro, .contacto {
+  flex: 1; /* cada uno ocupa la mitad */
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  padding: 40px;
+}
+
+/* Intro: texto centrado */
+.intro {
+  background: #f5f5f5; /* gris claro */
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Contacto: fondo negro */
+.contacto {
+  background: #c2aa49;
+  color: #fff;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-enviar {
+  background: #0077ff;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: #005fcc;
 }
